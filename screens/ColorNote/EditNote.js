@@ -37,6 +37,7 @@ export class EditNote {
         await this.noteTitleInput.setValue(title);
         await this.noteBodyInput.setValue(body);
         await driver.back();
+        await driver.back();
     }
 
     async verifyNoteCreated(title, body) {
