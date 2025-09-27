@@ -16,10 +16,6 @@ export class AddNote {
         return $('//android.widget.TextView[@text="Text"]');
     }
 
-    noteByTitle(title) {
-        return $(`//android.widget.TextView[@text="${title}"]`);
-    }
-
     get noteListView() {
         return $('android.widget.ListView');
     }
@@ -34,6 +30,14 @@ export class AddNote {
 
     get trashButton() {
         return $('//android.widget.ImageButton[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/main_btn1"]');
+    }
+
+    get facebookLink() {
+        return $('//android.widget.TextView[@text="Like us on Facebook"]');
+    }
+
+    noteByTitle(title) {
+        return $(`//android.widget.TextView[@text="${title}"]`);
     }
 
     async skipWelcomeScreen() {

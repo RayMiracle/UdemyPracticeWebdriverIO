@@ -11,9 +11,14 @@ config.capabilities = [{
     'appium:deviceName': 'Pixel 3',
     'appium:automationName': 'UIAutomator2',
     'appium:app': path.join(process.cwd(), 'app/android/ColorNote+Notepad.apk'),
-    'appium:autoGrantPermissions': true
+    'appium:autoGrantPermissions': true,
+    'appium:chromedriverAutodownload': true
 }];
 
-config.services = ['appium'];
+config.services = [['appium', {
+    args: {
+        relaxedSecurity: true
+    }
+}]];
 
 export { config };

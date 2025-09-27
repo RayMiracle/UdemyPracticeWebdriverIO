@@ -26,4 +26,20 @@ describe('ColorNote App', () => {
         await addNote.emptyTrash(noteTitle);
     });
 
+    it('Navigate to facebook website and back', async () => {
+        await addNote.navigationMenu.click();
+        await addNote.facebookLink.click();
+
+        // 1st option, locator from the inspector NATIVE_APP context
+        // await expect($('//android.widget.Button[@text="Cover photo of ColorNote"]')).toBeDisplayed();
+
+        // 2nd option, locator from the inspector WEBVIEW_chrome context
+        await driver.switchContext('WEBVIEW_chrome');
+        await expect($('.img.contain')).toBeDisplayed();
+
+        await driver.switchContext('NATIVE_APP');
+        await driver.back();
+        await expect(addNote.facebookLink).toBeDisplayed();
+    });
+
 });
