@@ -34,9 +34,14 @@ describe('ColorNote App', () => {
         // await expect($('//android.widget.Button[@text="Cover photo of ColorNote"]')).toBeDisplayed();
 
         // 2nd option, locator from the inspector WEBVIEW_chrome context
+        await driver.waitUntil(
+            async () => (await driver.getContexts()).includes('WEBVIEW_chrome'),
+            {
+                timeout: 10000, timeoutMsg: 'Expected webview context is not present after 10s'
+            }
+        );
         await driver.switchContext('WEBVIEW_chrome');
         await expect($('.img.contain')).toBeDisplayed();
-
         await driver.switchContext('NATIVE_APP');
         await driver.back();
         await expect(addNote.facebookLink).toBeDisplayed();
