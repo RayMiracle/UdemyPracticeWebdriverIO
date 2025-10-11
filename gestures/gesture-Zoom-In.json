@@ -1,0 +1,80 @@
+{
+  "name": "Zoom In",
+  "description": "Add Description",
+  "actions": [
+    {
+      "name": "finger1",
+      "ticks": [
+        {
+          "id": "1.1",
+          "type": "pointerMove",
+          "x": 35.9,
+          "y": 17.7,
+          "duration": 0
+        },
+        {
+          "id": "1.2",
+          "type": "pointerDown",
+          "button": 0
+        },
+        {
+          "id": "1.3",
+          "type": "pause",
+          "duration": 500
+        },
+        {
+          "id": "1.4",
+          "type": "pointerMove",
+          "x": 8.5,
+          "y": 17.5,
+          "duration": 250
+        },
+        {
+          "id": "1.5",
+          "type": "pointerUp",
+          "button": 0
+        }
+      ],
+      "color": "#FF3333",
+      "id": "1"
+    },
+    {
+      "name": "finger2",
+      "ticks": [
+        {
+          "id": "2.1",
+          "type": "pointerMove",
+          "x": 49.2,
+          "y": 17.8,
+          "duration": 0
+        },
+        {
+          "id": "2.2",
+          "type": "pointerDown",
+          "button": 0
+        },
+        {
+          "id": "2.3",
+          "type": "pause",
+          "duration": 500
+        },
+        {
+          "id": "2.4",
+          "type": "pointerMove",
+          "x": 79.6,
+          "y": 18,
+          "duration": 250
+        },
+        {
+          "id": "2.5",
+          "type": "pointerUp",
+          "button": 0
+        }
+      ],
+      "id": "2",
+      "color": "#FF8F00"
+    }
+  ],
+  "id": "a5e162b3-b632-4ced-ab0e-48947b1ff36c",
+  "date": 1760200955263
+}

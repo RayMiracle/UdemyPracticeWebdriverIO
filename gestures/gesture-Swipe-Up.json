@@ -1,0 +1,44 @@
+{
+  "name": "Swipe Up",
+  "description": "Add Description",
+  "actions": [
+    {
+      "name": "pointer1",
+      "ticks": [
+        {
+          "id": "1.1",
+          "type": "pointerMove",
+          "x": 46.9,
+          "y": 75.7,
+          "duration": 0
+        },
+        {
+          "id": "1.2",
+          "type": "pointerDown",
+          "button": 0
+        },
+        {
+          "id": "1.3",
+          "type": "pause",
+          "duration": 500
+        },
+        {
+          "id": "1.4",
+          "type": "pointerMove",
+          "x": 47.6,
+          "y": 32.3,
+          "duration": 250
+        },
+        {
+          "id": "1.5",
+          "type": "pointerUp",
+          "button": 0
+        }
+      ],
+      "color": "#FF3333",
+      "id": "1"
+    }
+  ],
+  "id": "91faae9c-24dd-4bd6-b666-01a059db10b1",
+  "date": 1760184464464
+}
