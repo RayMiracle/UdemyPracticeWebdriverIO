@@ -1,9 +1,15 @@
 {
     "compilerOptions": {
         "types": [
-            "node",
-            "@wdio/globals/types",
-            "@wdio/mocha-framework"
+            "node"
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
         ]
-    }
+    },
+    "include": [
+        "**/*",
+        "./node_modules/@wdio/globals/types.d.ts"
+    ]
 }
